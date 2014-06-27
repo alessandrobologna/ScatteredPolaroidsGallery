@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scattered Polaroids Gallery</title>
-<meta name="description" content="Scattered Polaroids Gallery: A flat-style take on a Polaroid gallery" />
+<title>Summer Recipes</title>
+<meta name="description" content="Scattered Polaroids Gallery" />
 <meta name="keywords" content="scattered polaroids, image gallery, javascript, random rotation, 3d, backface, flat design" />
 <meta name="author" content="Codrops" />
 <link rel="shortcut icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
 <script src="js/modernizr.min.js"></script>
 </head>
 <body>
-
+<h2>Gallery of your favourite summer recipes</h2>
 <section id="photostack1" class="photostack">
 			<div id="photostackCnt">					
 			</div>
@@ -72,7 +72,7 @@ $(document).ready(function() {
 	var url = window.location.href;
 	
 	var host = 'http://www.dev.1bot.co';
-	$.get(host+'/search.json?order=score&brand=myrecipes.com&query=summer&limit=10', function(data) {
+	$.get(host+'/search.json?order=score&brand=myrecipes.com&query=summer&limit=15', function(data) {
 		var array = [];
 		$.each(data, function() {
 			array.push({
